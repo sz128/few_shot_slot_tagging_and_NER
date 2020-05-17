@@ -1,4 +1,4 @@
-## few shot slot tagging and NER
+## Few-Shot Slot Tagging and NER
 Few-shot slot tagging and NER.
 
 ## Data
