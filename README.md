@@ -1,2 +1,13 @@
-# few_shot_slot_tagging_and_NER
-few-shot slot tagging and NER
+## few shot slot tagging and NER
+Few-shot slot tagging and NER.
+
+## Data
+Download the SNIPS and NER [dataset](https://atmahou.github.io/attachments/ACL2020data.zip) formatted as episodes.
+```console
+❱❱❱ bash prepare_data.sh
+```
+
+Data statistic:
+```console 
+❱❱❱ python3 data_utils/data_statistic.py --data_path data/xval_ner_shot_1_out_1
+```
