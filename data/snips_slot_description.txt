@@ -1,0 +1,39 @@
+album : album
+artist : artist
+best_rating : best rating
+city : city
+condition_description : condition description
+condition_temperature : condition temperature
+country : country
+cuisine : cuisine
+current_location : current location
+entity_name : entity name
+facility : facility
+genre : genre
+geographic_poi : geographic point of interest
+location_name : location name
+movie_name : movie name
+movie_type : movie type
+music_item : music item
+object_location_type : object location type
+object_name : object name
+object_part_of_series_type : object part of series type
+object_select : object select
+object_type : object type
+party_size_description : party size description
+party_size_number : party size number
+playlist : playlist
+playlist_owner : playlist owner
+poi : point of interest 
+rating_unit : rating unit
+rating_value : rating value
+restaurant_name : restaurant name
+restaurant_type : restaurant type
+served_dish : served dish
+service : service
+sort : sort
+spatial_relation : spatial relation
+state : state
+timeRange : time range
+track : track
+year : year

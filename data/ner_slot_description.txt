@@ -1,0 +1,36 @@
+CARDINAL : cardinal, numerals
+DATE : date
+EVENT : event
+FAC : facility
+GPE : geographical, social, political entity
+LANGUAGE : language
+LAW : law
+LOC : location : roads, trajectories, regions, structures, natural locations, public places, commercial places, assorted buildings, abstract places
+MISC : Miscellaneous : 
+MONEY : money
+NORP : nationality, other, religion, political
+ORDINAL : ordinal number
+ORG : organization
+PER : person name
+PERCENT : percent
+PERSON : person name
+PRODUCT : product
+QUANTITY : quantity
+TIME : time
+WORK_OF_ART : work of art
+abstract : abstract
+animal : animal
+corporation : corporation
+creative-work : creative work
+event : event
+group : group
+location : location
+object : object
+organization : organization
+person : person name
+place : place
+plant : plant
+product : product
+quantity : quantity
+substance : substance
+time : time
