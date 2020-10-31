@@ -1,5 +1,10 @@
-## Few-Shot Slot Tagging and NER
+# Few-Shot Slot Tagging and NER
 Few-shot slot tagging and NER.
+
+## Requirements
+
+* pytorch >= 1.4.0
+* transformers >= 3.3.1
 
 ## Data
 Download the SNIPS and NER [dataset](https://atmahou.github.io/attachments/ACL2020data.zip) formatted as episodes.
