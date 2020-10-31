@@ -55,7 +55,7 @@ bash run_few_shot_slot_tagger_protoNet_with_pure_bert.sh \
     --random_seed 999 \
     --model_removed no
 ```
-You can refer to an example of saved [log file](./example_log_file.txt).
+You can refer to an example of saved [log file](./example_log_file.txt) which is produced by the above script.
 
 * L-ProtoNet+CDT+VPB:
 ```shell 
