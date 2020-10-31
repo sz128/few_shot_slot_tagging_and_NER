@@ -43,7 +43,7 @@ bash run_few_shot_slot_tagger_protoNet_with_pure_bert.sh \
     --model_removed no
 ```
 
-* ProtoNet+CDT+VPB:
+* ProtoNet+CDT+VPB: 
 ```shell 
 bash run_few_shot_slot_tagger_protoNet_with_pure_bert.sh \
     --matching_similarity_y ctx \
@@ -55,6 +55,7 @@ bash run_few_shot_slot_tagger_protoNet_with_pure_bert.sh \
     --random_seed 999 \
     --model_removed no
 ```
+You can refer to an example of saved [log file](./example_log_file.txt).
 
 * L-ProtoNet+CDT+VPB:
 ```shell 
