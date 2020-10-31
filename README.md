@@ -1,5 +1,10 @@
 # Few-Shot Slot Tagging and NER
-Few-shot slot tagging and NER.
+
+This is the PyTorch implementation of the paper:
+**Vector Projection Network for Few-shot Slot Tagging in Natural Language Understanding**. **Su Zhu**, Ruisheng Cao, Lu Chen and Kai Yu. 
+[[PDF]](https://arxiv.org/pdf/2009.09568.pdf) 
+
+We achieve a new state-of-the-art of few-shot slot tagging on SNIPS and NER datasets.
 
 ## Requirements
 
