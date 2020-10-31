@@ -12,4 +12,38 @@ Data statistic:
 ❱❱❱ python3 data_utils/data_statistic.py --data_path data/xval_ner_shot_1_out_1
 ```
 
-## To Be Continue...
+## Training & Validation & Evaluation
+
+ - We try ten different random seeds (999, 189, 114, 929, 290, 848, 538, 874, 295, 266) and report average F1 scores in the paper. 
+ - For other data splits, please change the dataset path as "xval_snips_shot_{1,5}_out_{1,2,3,4,5,6,7}" and "xval_ner_shot_{1,5}_out_{1,2,3,4}".
+
+* ProtoNet+CDT+VP:
+```console 
+❱❱❱ bash run_few_shot_slot_tagger_protoNet_with_pure_bert.sh --matching_similarity_y ctx --matching_similarity_type xy1 --matching_similarity_function dot --test_finetune false --dataset_name HIT_ner_shot_5_out_1 --dataset_path ./data/xval_ner_shot_5_out_1 --random_seed 999 --model_removed no
+```
+
+* L-ProtoNet+CDT+VP:
+```console 
+❱❱❱ bash run_few_shot_slot_tagger_protoNet_with_pure_bert.sh --matching_similarity_y ctx_desc --matching_similarity_type xy1 --matching_similarity_function dot --test_finetune false --dataset_name HIT_ner_shot_5_out_1 --dataset_path ./data/xval_ner_shot_5_out_1 --random_seed 999 --model_removed no
+```
+
+* ProtoNet+CDT+VPB:
+```console 
+❱❱❱ bash run_few_shot_slot_tagger_protoNet_with_pure_bert.sh --matching_similarity_y ctx --matching_similarity_type xy --matching_similarity_function euclidean2 --test_finetune false --dataset_name HIT_ner_shot_5_out_1 --dataset_path ./data/xval_ner_shot_5_out_1 --random_seed 999 --model_removed no
+```
+
+* L-ProtoNet+CDT+VPB:
+```console 
+❱❱❱ bash run_few_shot_slot_tagger_protoNet_with_pure_bert.sh --matching_similarity_y ctx_desc --matching_similarity_type xy --matching_similarity_function euclidean2 --test_finetune false --dataset_name HIT_ner_shot_5_out_1 --dataset_path ./data/xval_ner_shot_5_out_1 --random_seed 999 --model_removed no
+```
+
+## Citation
+This code has been written using PyTorch >= 1.4.0. If you use any source codes included in this toolkit in your work, please cite the following paper. The bibtex is listed below:
+<pre>
+@article{zhu2020vector,
+  title={Vector Projection Network for Few-shot Slot Tagging in Natural Language Understanding},
+  author={Zhu, Su and Cao, Ruisheng and Chen, Lu and Yu, Kai},
+  journal={arXiv preprint arXiv:2009.09568},
+  year={2020}
+}
+</pre>

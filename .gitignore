@@ -1,2 +1,10 @@
-data/ACL2020data
+exp
+exp*
+log
+local
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/
+*/*/*/*/__pycache__/
+data/ACL2020data/
 data/xval_*
