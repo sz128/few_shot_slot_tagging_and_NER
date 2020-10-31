@@ -1,0 +1,71 @@
+Namespace(arch_dropout=0.1, arch_init_weight=0.2, dataset_name='HIT_ner_shot_5_out_1', dataset_path='./data/xval_ner_shot_5_out_1', deviceId=0, enc_dec=False, input_bos_eos=False, input_embedding_type='tf_emb', input_mini_word_freq=2, input_pretrained_transformer_model_name='bert-base-uncased', input_pretrained_transformer_model_type='bert', input_pretrained_wordEmb=None, input_pretrained_wordEmb_fixed=False, input_save_vocab='vocab', input_word_lowercase=False, intent_multi_class=False, matching_similarity_function='euclidean2', matching_similarity_type='xy', matching_similarity_y='ctx', model_removed='no', model_save_path='model', noStdout=False, random_seed=999, slot_embedding_dependent_query_encoding='none', slot_embedding_type='with_BIO', task='slot_tagger_with_abstract_crf__and__hiddenAttention__single_cls_CE', task_sc='hiddenAttention', task_sc_type='single_cls_CE', task_st='slot_tagger_with_abstract_crf', test_batchSize=1, test_finetune=True, test_finetune_accumulate_grad_batchSize=0, testing=False, testing_input_read_vocab=None, testing_model_read_path=None, testing_output_path=None, tf_layerwise_lr_decay=0.9, tr_batchSize=1, tr_exp_path='exp', tr_lr=1e-05, tr_lr_np=0.001, tr_lr_warmup_proportion=0.1, tr_max_epoch=5, tr_max_norm=1.0, tr_optim='adam', tr_st_weight=1.0)
+Experiment path: exp/few_shot_slot_intent/prototypical_network_with_pure_bert/model_slot_tagger_with_abstract_crf__and__hiddenAttention__single_cls_CE/data_HIT_ner_shot_5_out_1/preTF-bert-base-uncased_bs-1_dp-0.1_optim-adam_lr-1e-05_layer_decay-0.9__lr_np_0.001_mn-1.0_me-5_seed-999_cased_tf_emb__alpha_1.0__slot_emb_with_BIO__match_sim_xy_y_ctx_f_euclidean2__QEnc_on_LE_none__finetune
+Sat Oct 31 09:56:26 2020
+Loading pretrained bert model with bert-base-uncased
+Vocab size: input tokens (word-None, char-None, tf-30522)
+***** Training starts at Sat Oct 31 09:56:47 2020 *****
+  Num examples = 200
+  Num batches = 200
+  Num Epochs = 5
+mirco f1 = 20.88;    episode number = 100;    averaged mirco f1 = 20.61
+mirco f1 = 32.76;    episode number = 100;    averaged mirco f1 = 31.48
+Training:    Epoch : 0    Time : 81.3486s    Loss of tag : 1.0863    Loss of class : 0.0000
+1
+Parameter containing:
+tensor([[ 0.1684,  0.0325, -0.1675, -0.2147,  0.0000],
+        [-0.1718, -0.1625, -0.1551,  0.1668, -0.1639],
+        [-0.1586, -0.1326, -0.1573,  0.1510, -0.1584]], device='cuda:0',
+       requires_grad=True)
+episode number = 100;    averaged mirco f1 = 39.26
+Validation:    Epoch : 0    Time : 44.7752s    Loss : (0.59, 0.00)    Fscore : 39.26    cls-F1 : 100.00
+episode number = 100;    averaged mirco f1 = 48.72
+Evaluation:    Epoch : 0    Time : 10.0078s    Loss : (0.39, 0.00)    Fscore : 48.72    cls-F1 : 100.00
+NEW BEST:    Epoch : 0    best valid F1 : 39.26, cls-F1 : 100.00;    test F1 : 48.72, cls-F1 : 100.00
+Training:    Epoch : 1    Time : 81.2548s    Loss of tag : 0.7155    Loss of class : 0.0000
+1
+Parameter containing:
+tensor([[ 0.3147,  0.0981, -0.2922, -0.4265,  0.0000],
+        [-0.3201, -0.3331, -0.2885,  0.3494, -0.3325],
+        [-0.3143, -0.2861, -0.2951,  0.3007, -0.3195]], device='cuda:0',
+       requires_grad=True)
+episode number = 100;    averaged mirco f1 = 44.16
+Validation:    Epoch : 1    Time : 45.0290s    Loss : (0.48, 0.00)    Fscore : 44.16    cls-F1 : 100.00
+episode number = 100;    averaged mirco f1 = 54.33
+Evaluation:    Epoch : 1    Time : 10.0436s    Loss : (0.32, 0.00)    Fscore : 54.33    cls-F1 : 100.00
+NEW BEST:    Epoch : 1    best valid F1 : 44.16, cls-F1 : 100.00;    test F1 : 54.33, cls-F1 : 100.00
+Training:    Epoch : 2    Time : 81.4189s    Loss of tag : 0.5440    Loss of class : 0.0000
+1
+Parameter containing:
+tensor([[ 0.4415,  0.1646, -0.3959, -0.6213,  0.0000],
+        [-0.4432, -0.4670, -0.4032,  0.5250, -0.5052],
+        [-0.4388, -0.4276, -0.4212,  0.4447, -0.4786]], device='cuda:0',
+       requires_grad=True)
+episode number = 100;    averaged mirco f1 = 44.87
+Validation:    Epoch : 2    Time : 45.0828s    Loss : (0.42, 0.00)    Fscore : 44.87    cls-F1 : 100.00
+episode number = 100;    averaged mirco f1 = 56.09
+Evaluation:    Epoch : 2    Time : 10.0490s    Loss : (0.29, 0.00)    Fscore : 56.09    cls-F1 : 100.00
+NEW BEST:    Epoch : 2    best valid F1 : 44.87, cls-F1 : 100.00;    test F1 : 56.09, cls-F1 : 100.00
+Training:    Epoch : 3    Time : 81.5401s    Loss of tag : 0.4282    Loss of class : 0.0000
+1
+Parameter containing:
+tensor([[ 0.5454,  0.2327, -0.4892, -0.7958,  0.0000],
+        [-0.5260, -0.5522, -0.5056,  0.6877, -0.6786],
+        [-0.5321, -0.5624, -0.5468,  0.5848, -0.6344]], device='cuda:0',
+       requires_grad=True)
+episode number = 100;    averaged mirco f1 = 44.92
+Validation:    Epoch : 3    Time : 45.2713s    Loss : (0.39, 0.00)    Fscore : 44.92    cls-F1 : 100.00
+episode number = 100;    averaged mirco f1 = 58.52
+Evaluation:    Epoch : 3    Time : 10.0821s    Loss : (0.27, 0.00)    Fscore : 58.52    cls-F1 : 100.00
+NEW BEST:    Epoch : 3    best valid F1 : 44.92, cls-F1 : 100.00;    test F1 : 58.52, cls-F1 : 100.00
+Training:    Epoch : 4    Time : 81.9293s    Loss of tag : 0.3477    Loss of class : 0.0000
+1
+Parameter containing:
+tensor([[ 0.6376,  0.3012, -0.5777, -0.9584,  0.0000],
+        [-0.5852, -0.6378, -0.5890,  0.8377, -0.8428],
+        [-0.6062, -0.6767, -0.6687,  0.7096, -0.7840]], device='cuda:0',
+       requires_grad=True)
+episode number = 100;    averaged mirco f1 = 42.95
+Validation:    Epoch : 4    Time : 45.4277s    Loss : (0.38, 0.00)    Fscore : 42.95    cls-F1 : 100.00
+episode number = 100;    averaged mirco f1 = 59.32
+Evaluation:    Epoch : 4    Time : 10.0789s    Loss : (0.25, 0.00)    Fscore : 59.32    cls-F1 : 100.00
+BEST RESULT:     Epoch : 3    best valid (Loss: (0.39, 0.00) F1 : 44.92 cls-F1 : 100.00)    best test (Loss: (0.27, 0.00) F1 : 58.52 cls-F1 : 100.00)
