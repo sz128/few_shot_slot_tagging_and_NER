@@ -24,7 +24,7 @@ Data statistic:
 
 ## Training & Validation & Evaluation
 
- - We try ten different random seeds (999, 189, 114, 929, 290, 848, 538, 874, 295, 266) and report average F1 scores in the paper. 
+ - We try ten different random seeds (999, 189, 114, 929, 290, 848, 538, 874, 295, 266) and report average F1 scores in the [paper](https://arxiv.org/pdf/2009.09568.pdf) . 
  - For other data splits, please change the dataset path as "xval_snips_shot_{1,5}\_out_{1,2,3,4,5,6,7}" and "xval_ner_shot_{1,5}\_out_{1,2,3,4}".
 
 * ProtoNet+CDT+VP:
