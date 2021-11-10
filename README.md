@@ -91,4 +91,11 @@ This code has been written using PyTorch >= 1.4.0. If you use any source codes i
   journal={arXiv preprint arXiv:2009.09568},
   year={2020}
 }
+@InProceedings{zhu2021few,
+author="Zhu, Su and Chen, Lu and Cao, Ruisheng and Chen, Zhi and Miao, Qingliang and Yu, Kai",
+title="Few-Shot NLU with Vector Projection Distance and Abstract Triangular CRF",
+booktitle="Natural Language Processing and Chinese Computing",
+year="2021",
+pages="505--516",
+}
 </pre>
